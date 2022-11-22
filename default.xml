@@ -9,7 +9,7 @@
 
   <project name="poky" remote="yocto" revision="kirkstone" path="sources/poky"/>
   <project name="meta-openembedded" remote="oe" revision="kirkstone" path="sources/meta-openembedded"/>
-  <project name="qemu-sunxi-yocto" remote="straxy" revision="kirkstone" path="sources/base">
+  <project name="qemu-sunxi-yocto" remote="straxy" revision="main" path="sources/base">
     <copyfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
   <project name="meta-sunxi" remote="sunxi" revision="kirkstone" path="sources/meta-sunxi"/>
