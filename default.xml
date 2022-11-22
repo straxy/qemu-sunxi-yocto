@@ -13,5 +13,6 @@
     <copyfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
   <project name="meta-sunxi" remote="sunxi" revision="kirkstone" path="sources/meta-sunxi"/>
+  <project name="meta-mistra-base" remote="straxy" revision="main" path="sources/meta-mistra-base"/>
 
   </manifest>
