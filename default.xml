@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+  <manifest>
+  <default sync-j="4" revision="dunfell"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="https://github.com/straxy" name="straxy"/>
+  <remote fetch="https://github.com/linux-sunxi" name="sunxi"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+
+  <project name="poky" remote="yocto" revision="kirkstone" path="sources/poky"/>
+  <project name="meta-openembedded" remote="oe" revision="kirkstone" path="sources/meta-openembedded"/>
+  <project name="qemu-sunxi-yocto" remote="straxy" revision="kirkstone" path="sources/base">
+    <copyfile dest="setup-environment" src="scripts/setup-environment"/>
+  </project>
+  <project name="meta-sunxi" remote="sunxi" revision="kirkstone" path="sources/meta-sunxi"/>
+
+  </manifest>
