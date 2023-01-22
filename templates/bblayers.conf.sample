@@ -13,4 +13,5 @@ BBLAYERS ?= " \
   ${TOPDIR}/../sources/meta-openembedded/meta-python \
   ${TOPDIR}/../sources/meta-sunxi \
   ${TOPDIR}/../sources/meta-mistra-base \
+  ${TOPDIR}/../sources/meta-mistra-apps \
 "
