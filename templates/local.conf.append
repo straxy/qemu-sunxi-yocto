@@ -1,1 +1,2 @@
 MACHINE ?= "cubieboard"
+MACHINEOVERRIDES .= ":use-mailine-graphics"
