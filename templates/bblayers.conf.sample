@@ -1,6 +1,6 @@
 # POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
 # changes incompatibly
-POKY_BBLAYERS_CONF_VERSION = "1"
+POKY_BBLAYERS_CONF_VERSION = "2"
 
 BBPATH = "${TOPDIR}"
 BBFILES ?= ""
@@ -12,6 +12,5 @@ BBLAYERS ?= " \
   ${TOPDIR}/../sources/meta-openembedded/meta-oe \
   ${TOPDIR}/../sources/meta-openembedded/meta-python \
   ${TOPDIR}/../sources/meta-sunxi \
-  ${TOPDIR}/../sources/meta-mistra-base \
-  ${TOPDIR}/../sources/meta-mistra-apps \
+  ${TOPDIR}/../sources/meta-mistra \
 "

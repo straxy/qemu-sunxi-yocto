@@ -16,20 +16,12 @@ INSTRUCTIONS
 
 3) Start build
 
-`DISTRO=? MACHINE=cubieboard bitbake core-image-minimal`
+`DISTRO=mistra-framebuffer MACHINE=cubieboard bitbake core-image-minimal`
 
 Output image is in `./tmp/deploy/images/cubieboard`.
 
-4) Create an empty sd card with
+4) Resize `.sunxi-sdimg` image to 1GiB
 
-`qemu-img create sd.img 1G`
-
-5) Copy `.wic` image to sd card
-
-`dd if=core-image-minimal-cubieboard.wic of=sd.img bs=1M`
-
-6) Resize image to 1GiB
-
-`qemu-img resize sd.img 1G`
+`qemu-img resize core-image-minimal-cubieboard.sunxi-sdimg 1G`
 
 SD card is ready to use.
