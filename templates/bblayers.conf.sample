@@ -11,6 +11,8 @@ BBLAYERS ?= " \
   ${TOPDIR}/../sources/poky/meta-yocto-bsp \
   ${TOPDIR}/../sources/meta-openembedded/meta-oe \
   ${TOPDIR}/../sources/meta-openembedded/meta-python \
+  ${TOPDIR}/../sources/meta-arm/meta-arm \
+  ${TOPDIR}/../sources/meta-arm/meta-arm-toolchain \
   ${TOPDIR}/../sources/meta-sunxi \
   ${TOPDIR}/../sources/meta-mistra \
 "

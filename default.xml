@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
   <manifest>
-  <default sync-j="4" revision="kirkstone"/>
+  <default sync-j="4" revision="scarthgap"/>
 
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
   <remote fetch="https://github.com/straxy" name="straxy"/>
   <remote fetch="https://github.com/linux-sunxi" name="sunxi"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
 
-  <project name="poky" remote="yocto" revision="kirkstone" path="sources/poky"/>
-  <project name="meta-openembedded" remote="oe" revision="kirkstone" path="sources/meta-openembedded"/>
-  <project name="qemu-sunxi-yocto" remote="straxy" revision="main" path="sources/base">
+  <project name="poky" remote="yocto" path="sources/poky"/>
+  <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded"/>
+  <project name="qemu-sunxi-yocto" remote="straxy" path="sources/base">
     <copyfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
-  <project name="meta-sunxi" remote="sunxi" revision="kirkstone" path="sources/meta-sunxi"/>
-  <project name="meta-mistra" remote="straxy" revision="kirkstone" path="sources/meta-mistra"/>
+  <project name="meta-arm" remote="yocto" path="sources/meta-arm"/>
+  <project name="meta-sunxi" remote="sunxi" path="sources/meta-sunxi"/>
+  <project name="meta-mistra" remote="straxy" path="sources/meta-mistra"/>
 
   </manifest>
