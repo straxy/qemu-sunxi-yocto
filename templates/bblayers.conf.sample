@@ -14,5 +14,6 @@ BBLAYERS ?= " \
   ${TOPDIR}/../sources/meta-arm/meta-arm \
   ${TOPDIR}/../sources/meta-arm/meta-arm-toolchain \
   ${TOPDIR}/../sources/meta-sunxi \
+  ${TOPDIR}/../sources/meta-swupdate \
   ${TOPDIR}/../sources/meta-mistra \
 "

@@ -6,6 +6,7 @@
   <remote fetch="https://github.com/straxy" name="straxy"/>
   <remote fetch="https://github.com/linux-sunxi" name="sunxi"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/sbabic" name="sbabic"/>
 
   <project name="poky" remote="yocto" path="sources/poky"/>
   <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded"/>
@@ -14,6 +15,7 @@
   </project>
   <project name="meta-arm" remote="yocto" path="sources/meta-arm"/>
   <project name="meta-sunxi" remote="sunxi" path="sources/meta-sunxi"/>
+  <project name="meta-swupdate" remote="sbabic" path="sources/meta-swupdate"/>
   <project name="meta-mistra" remote="straxy" path="sources/meta-mistra"/>
 
   </manifest>
