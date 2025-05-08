@@ -1,2 +1,6 @@
-MACHINE ?= "cubieboard"
+MACHINE ?= "cubieboard-ng"
 MACHINEOVERRIDES .= ":use-mailine-graphics"
+
+DISTRO ?= "mistra-framebuffer"
+
+BBMULTICONFIG = "recovery"
