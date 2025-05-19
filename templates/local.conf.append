@@ -1,6 +1,6 @@
 MACHINE ?= "cubieboard-ng"
 MACHINEOVERRIDES .= ":use-mailine-graphics"
 
-DISTRO ?= "mistra-framebuffer"
+DISTRO = "mistra-framebuffer"
 
 BBMULTICONFIG = "recovery"
